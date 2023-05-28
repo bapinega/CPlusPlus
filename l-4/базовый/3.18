@@ -1,0 +1,32 @@
+#include <iostream>
+#include <climits>
+
+int main() {
+    const int n = 4; 
+    int arr[n][n]; 
+    int min_sum = INT_MAX; 
+    int min_row = -1; 
+
+
+    for (int i = 0; i < n; i++) {
+        int row_sum = 0; 
+        for (int j = 0; j < n; j++) {
+            std::cout << "Введите элемент [" << i << "][" << j << "]: ";
+            std::cin >> arr[i][j];
+            row_sum += arr[i][j]; 
+        }
+        if (row_sum < min_sum) {
+            min_sum = row_sum;
+            min_row = i; 
+        }
+    }
+
+
+    std::cout << "Строка с наименьшей суммой элементов: ";
+    for (int j = 0; j < n; j++) {
+        std::cout << arr[min_row][j] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
