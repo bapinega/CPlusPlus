@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double N, t, G;
+    cout << "Введите начальное количество ядер N: ";
+    cin >> N;
+    cout << "Введите период полураспада Г: ";
+    cin >> G;
+    cout << "Введите время t: ";
+    cin >> t;
+
+    double D = N * (1 - exp(-t * log(2) / G));
+    cout << "Число распавшихся ядер: " << D << endl;
+
+    char choice;
+    cout << "Вычислить значение D в процентном отношении к начальному количеству ядер N? (y/n): ";
+    cin >> choice;
+
+    if (choice == 'y' || choice == 'Y') {
+        double percent = D / N * 100;
+        cout << "Значение D в процентах: " << percent << "%" << endl;
+    }
+
+    return 0;
+}

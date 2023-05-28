@@ -1,0 +1,17 @@
+/* Самостоятельная 1 (базовая) №14 */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main(int argc, char** argv)
+{
+	setlocale(LC_ALL,"");
+	float a;
+	cout <<"Введите a\n";
+	cin>>a;
+	float chis = a * a + 1;
+	float znam = sqrt(a * a + 1);
+	cout << chis / znam << endl;
+	return 0;
+}

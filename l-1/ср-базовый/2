@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a;
+    cout << "Введите вещественное число a: ";
+    cin >> a;
+    
+    double a2 = a * a; // a^2
+    double a4 = a2 * a2; // a^4
+    double a8 = a4 * a4; // a^8
+    double a12 = a4 * a8; // a^12
+    double a16 = a8 * a8; // a^16
+    double a26 = a16 * a8 * a2; // a^26
+    
+    cout << "a^4 = " << a4 << endl;
+    cout << "a^12 = " << a12 << endl;
+    cout << "a^26 = " << a26 << endl;
+    
+    return 0;
+}

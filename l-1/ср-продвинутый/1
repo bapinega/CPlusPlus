@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double V, T, a;
+    const double g = 9.8; // ускорение свободного падения
+    cout << "Введите начальную скорость V: ";
+    cin >> V;
+    cout << "Введите время полета T: ";
+    cin >> T;
+
+    // вычисляем угол
+    a = asin(g * T / (2 * V));
+
+    // переводим угол из радиан в градусы
+    a = a * 180 / M_PI;
+
+    // выводим результат
+    cout << "Угол броска: " << a << " градусов." << endl;
+
+    return 0;
+}

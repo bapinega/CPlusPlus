@@ -1,0 +1,15 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, hundreds, tens, ones, newNum;
+    cout << "Enter a three-digit number: ";
+    cin >> num;
+    hundreds = num / 100; // определяем сотни
+    tens = (num / 10) % 10; // определяем десятки
+    ones = num % 10; // определяем единицы
+    newNum = hundreds * 100 + ones * 10 + tens; // формируем новое число
+    cout << "New number: " << newNum << endl;
+    return 0;
+}

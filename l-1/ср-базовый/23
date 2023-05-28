@@ -1,0 +1,16 @@
+/* Самостоятельная 1 (базовая) №15 */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main(int argc, char** argv)
+{
+	setlocale(LC_ALL,"");
+	float a;
+	cout <<"Введите a\n";
+	cin>>a;
+	float chis = 2 * a + sin(abs(3 * a));
+	cout << sqrt(chis / 3.56) << endl;
+	return 0;
+}

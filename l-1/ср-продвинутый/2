@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+double H, U, g = 9.81; // g - ускорение свободного падения
+cout << "Введите высоту H и скорость U самолета: ";
+cin >> H >> U;
+double T = sqrt(2 * H / g); // вычисляем время полета бомбы
+double S = U * T; // вычисляем подлетное расстояние до объекта
+cout << "Подлетное расстояние до объекта: " << S << endl;
+return 0;
+}
+

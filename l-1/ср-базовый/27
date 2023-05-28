@@ -1,0 +1,16 @@
+/** Самостоятельная 1 (базовая)
+13 б)**/
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main(int argc, char** argv)
+{
+	setlocale(LC_ALL,"");
+	int a;
+	cout <<"Введите a\n";
+	cin>>a;
+	cout << "x = " << 12 * a * a + 7 * a - 16 << endl;
+	return 0;
+}
